@@ -1,0 +1,23 @@
+[[endpoint]]
+  name = "Example path #1"
+  description = "Returns text"
+
+  [endpoint.request]
+    method = "GET"
+    path = "/"
+
+  [endpoint.response]
+    status_code = 200
+    body = 'Hello world!'
+
+[[endpoint]]
+  name = "Example path #2"
+  description = "Returns JSON"
+
+  [endpoint.request]
+    method = "POST"
+    path = "/path"
+
+  [endpoint.response]
+    status_code = 200
+    body_filename = 'response2.json'
