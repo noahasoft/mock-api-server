@@ -10,6 +10,9 @@
     status_code = 200
     body = 'Hello world!'
 
+  [endpoint.response.headers]
+    Content-Type = 'text/plain'
+
 [[endpoint]]
   name = "Example path #2"
   description = "Returns JSON"

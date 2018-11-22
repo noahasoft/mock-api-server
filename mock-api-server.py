@@ -25,7 +25,7 @@ def add_endpoint(name, request, response):
     def handler():
         resp = get_body(response)
         status = response.get('status_code', 200)
-        headers = {}
+        headers = response.get('headers', {})
         return (resp, status, headers)
 
     app.add_url_rule(
